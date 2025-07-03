@@ -4,30 +4,31 @@
 
 @font-face {
   font-family: 'Emulogic';
-  src: url('/emulogic.ttf') format('truetype');
+  src: url('./emulogic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+/* Ensure the page is visible even if font fails to load */
+html, body {
+  background-color: #111827 !important;
+  color: white !important;
+  font-family: 'Courier New', monospace;
 }
 
 body {
   font-family: 'Emulogic', 'Courier New', monospace;
 }
 
-/* Use Emulogic with fallbacks, but don't force it with !important */
+/* Use Emulogic with fallbacks */
 * {
   font-family: 'Emulogic', 'Courier New', monospace;
 }
 
-/* Ensure the page is visible even if font fails to load */
-html, body {
-  background-color: #111827;
-  color: white;
-}
-
-/* Add a loading state to prevent flash of unstyled content */
+/* Remove font loading states that might cause issues */
 .font-loading {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .font-loaded {
