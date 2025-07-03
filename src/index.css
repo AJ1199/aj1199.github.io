@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Emulogic';
+  src: url('./assets/emulogic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Emulogic', monospace;
+}
+
+/* Ensure all text uses the Emulogic font */
+* {
+  font-family: 'Emulogic', monospace !important;
+}
