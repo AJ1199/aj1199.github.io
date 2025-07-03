@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="text-center mb-16">
           <div className="mb-4 flex justify-center">
             <img 
-              src="/name-copy.png" 
+              src="./name-copy.png" 
               alt="Andrew James Hollett" 
               className="h-48 md:h-64 lg:h-80 xl:h-96 object-contain"
               style={{ imageRendering: 'pixelated' }}
@@ -25,7 +25,8 @@ const Hero = () => {
           <div className="space-y-6 text-center">
             <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
             <p className="text-gray-200 leading-relaxed text-lg">
-             description
+              I'm a passionate game developer and digital artist with experience in C++, Lua, and various game engines. 
+              I love creating pixel art and bringing interactive experiences to life through code and creativity.
             </p>
      
             <div className="flex justify-center pt-4">

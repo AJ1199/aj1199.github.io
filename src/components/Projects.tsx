@@ -7,7 +7,7 @@ const Projects = () => {
       id: 1,
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
-      image: "/screenshot-2.png",
+      image: "./screenshot-2.png",
       technologies: ["Lua", "Love2d"],
       liveUrl: "#",
       githubUrl: "#"
@@ -16,7 +16,7 @@ const Projects = () => {
       id: 2,
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
-      image: "/screenshot-1.png",
+      image: "./screenshot-1.png",
       technologies: ["c++", "Sdl"],
   
     },
@@ -26,12 +26,12 @@ const Projects = () => {
     {
       id: 1,
       title: "Super Mushroom",
-      image: "/mushroom.png",
+      image: "./mushroom.png",
     },
     {
       id: 2,
       title: "My Cat",
-      image: "/jb.png",
+      image: "./jb.png",
     }
   ];
 
@@ -42,7 +42,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
           <p className="text-gray-200 max-w-2xl mx-auto">
-            Description
+            A collection of games and interactive experiences I've created using various technologies and game engines.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Featured Sprite Art</h2>
           <p className="text-gray-200 max-w-2xl mx-auto">
-            Pixel art I created in Asprite
+            Pixel art I created in Aseprite for various projects and personal artwork.
           </p>
         </div>
 
