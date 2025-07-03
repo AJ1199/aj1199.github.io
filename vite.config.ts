@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/AJ1199.github.io/',
+  base: '/',
   build: {
     assetsDir: 'assets',
     rollupOptions: {
