@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-950 to-black">
       <Header />
-      <div className="bg-gradient-to-br from-gray-900 via-green-950 to-black">
+      <main className="bg-gradient-to-br from-gray-900 via-green-950 to-black">
         <Hero />
         <Skills />
         <Projects />
         <Contact />
-      </div>
+      </main>
       
       {/* Footer */}
       <footer className="bg-gradient-to-br from-gray-900 via-green-950 to-black text-white py-8 border-t border-green-900/30">
