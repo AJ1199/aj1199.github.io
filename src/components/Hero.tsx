@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="text-center mb-16">
           <div className="mb-4 flex justify-center">
             <img 
-              src="/src/assets/name copy.png" 
+              src="/name-copy.png" 
               alt="Andrew James Hollett" 
               className="h-48 md:h-64 lg:h-80 xl:h-96 object-contain"
               style={{ imageRendering: 'pixelated' }}

@@ -4,43 +4,43 @@ const Skills = () => {
   const technologyLogos = [
     {
       name: "C++",
-      image: "/src/assets/C++.png"
+      image: "/cpp.png"
     },
     {
       name: "Love2D",
-      image: "/src/assets/Love2d.png"
+      image: "/love2d.png"
     },
     {
       name: "Unreal",
-      image: "/src/assets/Unreal_Engine_Logo.svg copy.png"
+      image: "/unreal-engine-logo.png"
     },
     {
       name: "Unity",
-      image: "/src/assets/unity-69-logo-black-and-white.png"
+      image: "/unity-logo.png"
     },
     {
       name: "Godot",
-      image: "/src/assets/godot.png"
+      image: "/godot.png"
     },
     {
       name: "Visual Studio",
-      image: "/src/assets/Visual_Studio_Icon_2022.svg.png"
+      image: "/visual-studio-icon.png"
     },
     {
       name: "Photoshop",
-      image: "/src/assets/Photoshop-Logo-2015.jpg"
+      image: "/photoshop-logo.jpg"
     },
     {
       name: "Aseprite",
-      image: "/src/assets/Logo_Aseprite.svg.png"
+      image: "/aseprite-logo.png"
     },
     {
       name: "Blender",
-      image: "/src/assets/Blender_logo_no_text.svg.png"
+      image: "/blender-logo.png"
     },
     {
       name: "Paint Tool SAI",
-      image: "/src/assets/Paint-Tool-SAI-logo.png"
+      image: "/paint-tool-sai-logo.png"
     }
   ];
 

@@ -7,7 +7,7 @@ const Projects = () => {
       id: 1,
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
-      image: "/src/assets/Screenshot_2.png",
+      image: "/screenshot-2.png",
       technologies: ["Lua", "Love2d"],
       liveUrl: "#",
       githubUrl: "#"
@@ -16,36 +16,22 @@ const Projects = () => {
       id: 2,
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
-      image: "/src/assets/Screenshot_1.png",
+      image: "/screenshot-1.png",
       technologies: ["c++", "Sdl"],
   
     },
-  //  {
-     // id: 3,
-     // title: "-",
-     // description: "-",
-     // image: "",
-     // technologies: ["-", "-", "-", "-"]
-  //  },
-   // {
-     // id: 4,
-     // title: "-",
-     // description: "-",
-     // image: "",
-     // technologies: ["-", "-", "-", "-"]
-   // }
   ];
 
   const spriteArt = [
     {
       id: 1,
       title: "Super Mushroom",
-      image: "/src/assets/sprite-art/Mushroom.png",
+      image: "/mushroom.png",
     },
     {
       id: 2,
       title: "My Cat",
-      image: "/src/assets/sprite-art/JB.png",
+      image: "/jb.png",
     }
   ];
 

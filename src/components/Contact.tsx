@@ -3,19 +3,19 @@ import React from 'react';
 const Contact = () => {
   const contactLinks = [
     {
-      icon: <img src="/src/assets/Gmail.png" alt="Gmail" className="w-6 h-6 object-contain" />,
+      icon: <img src="/gmail.png" alt="Gmail" className="w-6 h-6 object-contain" />,
       label: "Email",
       value: "andrewhollett1199@gmail.com",
       href: "mailto:andrewhollett1199@gmail.com"
     },
     {
-      icon: <img src="/src/assets/GitHub.png" alt="GitHub" className="w-6 h-6 object-contain" />,
+      icon: <img src="/github.png" alt="GitHub" className="w-6 h-6 object-contain" />,
       label: "GitHub",
       value: "github.com/AJ1199",
       href: "https://github.com/AJ1199"
     },
     {
-      icon: <img src="/src/assets/Linkedin.png" alt="LinkedIn" className="w-6 h-6 object-contain" />,
+      icon: <img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6 object-contain" />,
       label: "LinkedIn",
       value: "linkedin.com/in/andrew-hollett",
       href: "https://www.linkedin.com/in/andrew-hollett-291384333/"
