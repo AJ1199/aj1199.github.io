@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/AJ1199.github.io/',
+  base: '/', // Changed from '/AJ1199.github.io/' to '/' for Netlify
   build: {
     assetsDir: 'assets',
     rollupOptions: {
