@@ -6,7 +6,8 @@ const Testimonials = () => {
       id: 1,
       name: "Joshua Goulden",
       image: "./testimonial-avatar.jpg",
-      text: "I had the opportunity to work with Andrew Hollett on the Bubble Blast Game Jam. Andrew Hollett brought a lot of enthusiasm with taking on tasks and getting the job done. He often took initiative in sprite creation in this Game Jam and was never afraid to try new ideas. He's a friendly and motivated team member who puts effort into seeing a project through to completion, and his dedication to the work was clear from start to finish."
+      text: "I had the opportunity to work with Andrew Hollett on the Bubble Blast Game Jam. Andrew Hollett brought a lot of enthusiasm with taking on tasks and getting the job done. He often took initiative in sprite creation in this Game Jam and was never afraid to try new ideas. He's a friendly and motivated team member who puts effort into seeing a project through to completion, and his dedication to the work was clear from start to finish.",
+      link: "https://joshuagoulden520.itch.io/"
     },
   ];
 
@@ -25,8 +26,19 @@ const Testimonials = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-green-950/50 backdrop-blur-sm rounded-2xl p-8 border border-green-900/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              {/* Name at top */}
-              <h3 className="text-xl font-bold text-white mb-6 text-center">{testimonial.name}</h3>
+              {/* Name at top - clickable if link exists */}
+              {testimonial.link ? (
+                <a 
+                  href={testimonial.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-xl font-bold text-white mb-6 text-center hover:text-green-300 transition-colors duration-200"
+                >
+                  {testimonial.name}
+                </a>
+              ) : (
+                <h3 className="text-xl font-bold text-white mb-6 text-center">{testimonial.name}</h3>
+              )}
               
               {/* Image in center */}
               <div className="flex justify-center mb-6">
