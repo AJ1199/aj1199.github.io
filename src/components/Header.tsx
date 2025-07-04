@@ -13,7 +13,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Skills', 'Projects', 'Contact'];
+  const navItems = ['Home', 'Skills', 'Projects', 'Testimonials', 'Contact'];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.toLowerCase());
