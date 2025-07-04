@@ -3,7 +3,9 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   const getImagePath = (imageName: string) => {
-    return import.meta.env.DEV ? `/${imageName}` : `/AJ1199.github.io/${imageName}`;
+    // For GitHub Pages, we need to include the repository name in the path
+    const basePath = import.meta.env.BASE_URL || '/';
+    return `${basePath}${imageName}`;
   };
 
   const projects = [
