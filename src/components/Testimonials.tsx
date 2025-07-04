@@ -4,22 +4,10 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Alex Chen",
+      name: "Joshua Goulden",
       image: "./testimonial-avatar.jpg",
-      text: "Andrew's pixel art skills are exceptional. His attention to detail and creative vision brought our game characters to life in ways we never imagined. The retro aesthetic he created perfectly captured the nostalgic feel we were aiming for."
+      text: "I had the opportunity to work with Andrew Hollett on the Bubble Blast Game Jam. Andrew Hollett brought a lot of enthusiasm with taking on tasks and getting the job done. He often took initiative in sprite creation in this Game Jam and was never afraid to try new ideas. He's a friendly and motivated team member who puts effort into seeing a project through to completion, and his dedication to the work was clear from start to finish."
     },
-    {
-      id: 2,
-      name: "Sarah Martinez",
-      image: "./testimonial-avatar.jpg",
-      text: "Working with Andrew on our indie game project was fantastic. His C++ programming skills and game development expertise helped us overcome complex technical challenges. He's reliable, creative, and delivers quality work on time."
-    },
-    {
-      id: 3,
-      name: "Mike Johnson",
-      image: "./testimonial-avatar.jpg",
-      text: "Andrew's combination of programming and artistic skills is rare in the industry. He not only coded our game mechanics flawlessly but also created stunning sprite animations that elevated the entire gaming experience."
-    }
   ];
 
   return (
