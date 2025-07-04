@@ -1,46 +1,50 @@
 import React from 'react';
 
 const Skills = () => {
+  const getImagePath = (imageName: string) => {
+    return import.meta.env.DEV ? `/${imageName}` : `/AJ1199.github.io/${imageName}`;
+  };
+
   const technologyLogos = [
     {
       name: "C++",
-      image: "/cpp.png"
+      image: getImagePath("cpp.png")
     },
     {
       name: "Love2D",
-      image: "/love2d.png"
+      image: getImagePath("love2d.png")
     },
     {
       name: "Unreal",
-      image: "/unreal-engine-logo.png"
+      image: getImagePath("unreal-engine-logo.png")
     },
     {
       name: "Unity",
-      image: "/unity-logo.png"
+      image: getImagePath("unity-logo.png")
     },
     {
       name: "Godot",
-      image: "/godot.png"
+      image: getImagePath("godot.png")
     },
     {
       name: "Visual Studio",
-      image: "/visual-studio-icon.png"
+      image: getImagePath("visual-studio-icon.png")
     },
     {
       name: "Photoshop",
-      image: "/photoshop-logo.jpg"
+      image: getImagePath("photoshop-logo.jpg")
     },
     {
       name: "Aseprite",
-      image: "/aseprite-logo.png"
+      image: getImagePath("aseprite-logo.png")
     },
     {
       name: "Blender",
-      image: "/blender-logo.png"
+      image: getImagePath("blender-logo.png")
     },
     {
       name: "Paint Tool SAI",
-      image: "/paint-tool-sai-logo.png"
+      image: getImagePath("paint-tool-sai-logo.png")
     }
   ];
 

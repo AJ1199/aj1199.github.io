@@ -1,11 +1,15 @@
 import React from 'react';
 
 const Testimonials = () => {
+  const getImagePath = (imageName: string) => {
+    return import.meta.env.DEV ? `/${imageName}` : `/AJ1199.github.io/${imageName}`;
+  };
+
   const testimonials = [
     {
       id: 1,
       name: "Joshua Goulden",
-      image: "/testimonial-avatar.jpg",
+      image: getImagePath("testimonial-avatar.jpg"),
       text: "I had the opportunity to work with Andrew Hollett on the Bubble Blast Game Jam. Andrew Hollett brought a lot of enthusiasm with taking on tasks and getting the job done. He often took initiative in sprite creation in this Game Jam and was never afraid to try new ideas. He's a friendly and motivated team member who puts effort into seeing a project through to completion, and his dedication to the work was clear from start to finish.",
       link: "https://joshuagoulden520.itch.io/"
     },

@@ -2,6 +2,10 @@ import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
+  const getImagePath = (imageName: string) => {
+    return import.meta.env.DEV ? `/${imageName}` : `/AJ1199.github.io/${imageName}`;
+  };
+
   return (
     <section id="home" className="pt-20 pb-16">
       <div className="container mx-auto px-6">
@@ -9,7 +13,7 @@ const Hero = () => {
         <div className="text-center mb-16">
           <div className="mb-4 flex justify-center">
             <img 
-              src="/name-copy.png" 
+              src={getImagePath('name-copy.png')} 
               alt="Andrew James Hollett" 
               className="h-48 md:h-64 lg:h-80 xl:h-96 object-contain"
               style={{ imageRendering: 'pixelated' }}

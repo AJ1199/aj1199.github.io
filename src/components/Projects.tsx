@@ -2,12 +2,16 @@ import React from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
+  const getImagePath = (imageName: string) => {
+    return import.meta.env.DEV ? `/${imageName}` : `/AJ1199.github.io/${imageName}`;
+  };
+
   const projects = [
     {
       id: 1,
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
-      image: "/screenshot-2.png",
+      image: getImagePath("screenshot-2.png"),
       technologies: ["Lua", "Love2d"],
       liveUrl: "#",
       githubUrl: "#"
@@ -16,7 +20,7 @@ const Projects = () => {
       id: 2,
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
-      image: "/screenshot-1.png",
+      image: getImagePath("screenshot-1.png"),
       technologies: ["c++", "Sdl"],
   
     },
@@ -26,12 +30,12 @@ const Projects = () => {
     {
       id: 1,
       title: "Super Mushroom",
-      image: "/mushroom.png",
+      image: getImagePath("mushroom.png"),
     },
     {
       id: 2,
       title: "My Cat",
-      image: "/jb.png",
+      image: getImagePath("jb.png"),
     }
   ];
 
