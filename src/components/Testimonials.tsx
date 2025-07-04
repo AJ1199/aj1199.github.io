@@ -15,7 +15,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         {/* Testimonials Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">What People Say</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Testimonials</h2>
           <p className="text-gray-200 max-w-2xl mx-auto">
             Feedback I've worked with on various projects.
           </p>
