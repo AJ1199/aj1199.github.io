@@ -13,7 +13,7 @@ const Projects = () => {
       id: 1,
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
-      image: getImagePath("screenshot-2.png"),
+      image: getImagePath("TitleB.png"),
       technologies: ["Lua", "Love2d"],
       liveUrl: "#",
       githubUrl: "#"
@@ -22,7 +22,7 @@ const Projects = () => {
       id: 2,
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
-      image: getImagePath("screenshot-1.png"),
+      image: getImagePath("TitleA.png"),
       technologies: ["c++", "Sdl"],
   
     },
@@ -31,6 +31,7 @@ const Projects = () => {
       title: "Bat Man Infinite Runner",
       description: "An infinite runner where you play as Bat man and jump from building to building while jumping over bullets. This game also includes different outfits for the player to pick",
       image: getImagePath("TitleC.png"),
+      hoverImage: getImagePath("PlayC.png"),
       technologies: ["Unreal 5"],
   
     },  
@@ -39,6 +40,7 @@ const Projects = () => {
       title: "Iron Man Shooter",
       description: "A side scrolling shooter game where you play as Iron man. ",
       image: getImagePath("TitleD.png"),
+      hoverImage: getImagePath("PlayD.png"),
       technologies: ["Unreal 5"],
   
     },
@@ -75,10 +77,17 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative overflow-hidden">
                 <img 
-                  src={project.image} 
+                  src={project.hoverImage ? project.image : project.image} 
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-64 object-cover group-hover:scale-105 transition-all duration-300 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
                 />
+                {project.hoverImage && (
+                  <img 
+                    src={project.hoverImage} 
+                    alt={`${project.title} gameplay`}
+                    className="absolute inset-0 w-full h-64 object-cover opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                  />
+                )}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
               </div>
 
