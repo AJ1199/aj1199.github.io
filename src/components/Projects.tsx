@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
       image: getImagePath("screenshot-2.png"),
-      technologies: ["Lua", "Love2d"],
+      technologies: ["Unreal 5"],
       liveUrl: "#",
       githubUrl: "#"
     },
@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
       image: getImagePath("screenshot-1.png"),
-      technologies: ["c++", "Sdl"],
+      technologies: ["Unreal 5", ],
   
     },
   ];
