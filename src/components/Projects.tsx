@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Dungeon Escape",
       description: "This game has an atari like artstyle with gameplay similar to beserk.",
       image: getImagePath("screenshot-2.png"),
-      technologies: ["Unreal 5"],
+      technologies: ["Lua", "Love2d"],
       liveUrl: "#",
       githubUrl: "#"
     },
@@ -23,10 +23,26 @@ const Projects = () => {
       title: "Duck Hunt PC",
       description: "A recreation of the game Duck hunt for the nes. This game uses the mouse to aim and shoot.",
       image: getImagePath("screenshot-1.png"),
-      technologies: ["Unreal 5", ],
+      technologies: ["c++", "Sdl"],
   
     },
-  ];
+    {
+      id: 3,
+      title: "Bat Man Infinite Runner",
+      description: "An infinite runner where you play as Bat man and jump from building to building while jumping over bullets. This game also includes different outfits for the player to pick",
+      image: getImagePath("TitleC.png"),
+      technologies: ["Unreal 5"],
+  
+    },  
+    {
+      id: 4,
+      title: "Iron Man Shooter",
+      description: "A side scrolling shooter game where you play as Iron man. ",
+      image: getImagePath("TitleD.png"),
+      technologies: ["Unreal 5"],
+  
+    },
+];
 
   const spriteArt = [
     {
